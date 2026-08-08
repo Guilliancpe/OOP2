@@ -21,12 +21,5 @@ class Adobo(Recipe, InsertnDelete):
     def delete_adobo(self, ingredient):
         self.delete_ingredient(ingredient, 0)
 
-#Object creation
-adobo = Adobo()
 
-
-adobo.show_recipe()
-
-adobo.delete_adobo("Pork")
-adobo.delete_adobo("Garlic")
         
