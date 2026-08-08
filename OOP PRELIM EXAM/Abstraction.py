@@ -1,7 +1,8 @@
 from abc import ABC, abstractmethod
-import Parentfile as PF
+from Insert import Insert
 
-class Recipe(PF, ABC):
+
+class Recipe(Insert, ABC):
     def __init__(self, filename = "Recipe.csv"):
         super().__init__(filename)
         

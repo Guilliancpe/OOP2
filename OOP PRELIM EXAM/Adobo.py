@@ -1,7 +1,9 @@
-import Abstraction, csv
-import Insert_Ingredient
+from Abstraction import Recipe
+from Insert import Insert
+import csv
 
-class Adobo(Abstraction):
+#Inheritance
+class Adobo(Recipe, Insert):
     def show_recipe(self):
         print ("----- ADOBO -----")
         print ("Recipe: ")
@@ -11,7 +13,14 @@ class Adobo(Abstraction):
             
             for row in reader:
                 if len(row) > 0 and row[0] != "":
-                    print("-", row[0])
+                    print("-", row[1:])
                 
     def insert_adobo(self, ingredient):
-        self.insert
+        self.insert_ingredient(ingredient, 0)
+
+#Object creation
+adobo = Adobo()
+
+adobo.insert_adobo("Pork")
+adobo.show_recipe()
+        

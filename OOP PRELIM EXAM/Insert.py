@@ -1,8 +1,9 @@
-import Parentfile as PF
+from Parentfile import Parent_file
 import csv
 
-class Insert(PF):
+class Insert(Parent_file):
     def insert_ingredient(self, ingredient, column):
+        self.create_file()
         
         with open(self.filename, "r", newline="") as file:
             rows = list(csv.reader(file))
