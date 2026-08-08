@@ -22,8 +22,14 @@ chopseuy = Chopseuy()
 tinola = Tinola()
 
 
-
+# This is the main driver function
+# Basically this is like the finisher of the whole code
+# I have combined each 
 def MAIN_DRIVER():
+
+  # This is the first loop I did a loop inside a loop
+  # so I can keep going back to the recipe menu
+  # without the code ending or just stopping
     while True:
         print("=====RECIPE MENU=====")
         print("1. Adobo")
@@ -36,38 +42,45 @@ def MAIN_DRIVER():
         print("8. Pancit")
         print("9. Chopseuy")
         print("10. Tinola")
-        print("11. Show Ingredients")
-        print("12. Exit")
+        print("11. Exit")
         print("=====================")
 
         choice = None
         choice = int(input("Input choice: "))
         
-        if choice == 12:
+        if choice == 11:
             print("Exiting...")
             break
         
         
         
         elif choice == 1:
-            
-            while True:
+            # second loop is for the individual food classes and their functions
+            while True: 
                 
                 if choice == 1:
                     print("====== ADOBO ======")
                     print("1. New Ingredient")
                     print("2. Delete Ingredient")
-                    print("3. Exit")
+                    print("3. Show recipe")
+                    print("4. Exit")
                     new_choice = None
                     new_choice = int(input("Input choice: "))
+                    # Inputs ingredients
                     if new_choice == 1:
                         x = input("Input Ingredient: ")
                         adobo.insert_adobo(x)
+                    # Deletes Ingredients
                     elif new_choice == 2:
                         x = input("Delete Ingredient: ")
                         adobo.delete_adobo(x)
+                    # Shows the recipe
                     elif new_choice == 3:
+                        adobo.show_recipe()
+                    # Goes back to first loop
+                    elif new_choice == 4:
                         break
+                    # choice checker
                     else:
                         print("Invalid Choice!")              
         elif choice == 2:
@@ -75,7 +88,8 @@ def MAIN_DRIVER():
                     print("===== LUMPIA =====")
                     print("1. New Ingredient")
                     print("2. Delete Ingredient")
-                    print("3. Exit")
+                    print("3. Show recipe")
+                    print("4. Exit")
                     new_choice = None
                     new_choice = int(input("Incput choice: "))
                     if new_choice == 1:
@@ -85,6 +99,8 @@ def MAIN_DRIVER():
                         y = input("Delete Ingredient: ")
                         lumpia.delete_lumpia(y)
                     elif new_choice == 3:
+                        lumpia.show_recipe()
+                    elif new_choice == 4:
                         break
                     else:
                         print("Invalid Choice!")
@@ -93,7 +109,8 @@ def MAIN_DRIVER():
                     print("===== SINIGANG =====")
                     print("1. New Ingredient")
                     print("2. Delete Ingredient")
-                    print("3. Exit")
+                    print("3. Show recipe")
+                    print("4. Exit")
                     new_choice = None
                     new_choice = int(input("Input Choice: "))
                     if new_choice == 1:
@@ -103,6 +120,8 @@ def MAIN_DRIVER():
                         z = input("Delete Ingredient: ")
                         sinigang.delete_Sinigang(z)
                     elif new_choice == 3:
+                        sinigang.show_recipe()
+                    elif new_choice == 4:
                         break
                     else:
                         print("Invalid Choice!")    
@@ -112,7 +131,8 @@ def MAIN_DRIVER():
                     print("===== NILAGA =====")
                     print("1. New Ingredient")
                     print("2. Delete Ingredient")
-                    print("3. Exit")
+                    print("3. Show recipe")
+                    print("4. Exit")
                     new_choice = None
                     new_choice = int(input("Input Choice: "))
                     if new_choice == 1:
@@ -122,6 +142,8 @@ def MAIN_DRIVER():
                         a = input("Delete Ingredient: ")
                         nilaga.delete_nilaga(a)
                     elif new_choice == 3:
+                        nilaga.show_recipe()
+                    elif new_choice == 4:
                         break
                     else:
                         print("Invalid choice!")
@@ -131,7 +153,8 @@ def MAIN_DRIVER():
                     print("====== BICOL EXPRESS =====")
                     print("1. New Ingredient")
                     print("2. Delete Ingredient")
-                    print("3. Exit")
+                    print("3. Show recipe")
+                    print("4. Exit")
                     new_choice = None
                     new_choice = int(input("Input Choice: "))
                     if new_choice == 1:
@@ -141,6 +164,8 @@ def MAIN_DRIVER():
                         b = input("Delete Ingredient: ")
                         BC.delete_BC(b)
                     elif new_choice == 3:
+                        BC.show_recipe()
+                    elif new_choice == 4:
                         break
                     else:
                         print("Invalid Choice!")
@@ -150,7 +175,8 @@ def MAIN_DRIVER():
                     print("===== SISIG =====")
                     print("1. New Ingredient")
                     print("2. Delete Ingredient")
-                    print("3. Exit")
+                    print("3. Show recipe")
+                    print("4. Exit")
                     new_choice = None
                     new_choice = int(input("Input choice: "))
                     if new_choice == 1:
@@ -160,6 +186,8 @@ def MAIN_DRIVER():
                         c = input("Delete Ingredient: ")
                         sisig.delete_Sisig(c)
                     elif new_choice == 3:
+                        sisig.show_recipe()
+                    elif new_choice == 4:
                         break
                     else:
                         print("Invalid choice!")
@@ -169,7 +197,8 @@ def MAIN_DRIVER():
                     print("===== KARE-KARE ======")
                     print("1. New Ingredient")
                     print("2. Delete Ingredient")
-                    print("3. Exit")
+                    print("3. Show recipe")
+                    print("4. Exit")
                     new_choice = None
                     new_choice = int(input("Input Choice: "))
                     if new_choice == 1:
@@ -178,6 +207,8 @@ def MAIN_DRIVER():
                     elif new_choice == 2:
                         d = input("Delete Ingredient: ")
                         KK.delete_KK(d)
+                    elif new_choice == 3:
+                        KK.show_recipe()
                     elif new_choice == 3:
                         break
                     else:
@@ -188,7 +219,8 @@ def MAIN_DRIVER():
                     print("===== PANCIT =====")
                     print("1. New Ingredient")
                     print("2. Delete Ingredient")
-                    print("3. Exit")
+                    print("3. Show recipe")
+                    print("4. Exit")
                     new_choice = None
                     new_choice = int(input("Input Choice: "))
                     if new_choice == 1:
@@ -198,6 +230,8 @@ def MAIN_DRIVER():
                         e = input("Delete Item: ")
                         pancit.delete_Pancit(e)
                     elif new_choice == 3:
+                        pancit.show_recipe()
+                    elif new_choice == 4:
                         break
                     else:
                         print("Invalid Choice!")
@@ -207,7 +241,8 @@ def MAIN_DRIVER():
                     print("===== CHOPSEUY =====")
                     print("1. New Ingredient")
                     print("2. Delete Item")
-                    print("3. Exit")
+                    print("3. Show recipe")
+                    print("4. Exit")
                     new_choice = None
                     new_choice = int(input("Input Choice: "))
                     if new_choice == 1:
@@ -217,6 +252,8 @@ def MAIN_DRIVER():
                         f = input("Delete Ingredient: ")
                         chopseuy.delete_Chopseuy(f)
                     elif new_choice == 3:
+                        chopseuy.show_recipe()
+                    elif new_choice == 4:
                         break
                     else:
                         print("Invalid Choice!")
@@ -226,7 +263,8 @@ def MAIN_DRIVER():
                     print("===== TINOLA =====")
                     print("1. New Ingredient")
                     print("2. Delete Ingredient")
-                    print("3. Exit")
+                    print("3. Show recipe")
+                    print("4. Exit")
                     new_choice = None
                     new_choice = int(input("Input Choice: "))
                     if new_choice == 1:
@@ -236,14 +274,12 @@ def MAIN_DRIVER():
                         g = input("Delete Ingredient: ")
                         tinola.delete_Tinola(g)
                     elif new_choice == 3:
+                        tinola.show_recipe()
+                    elif new_choice == 4:
                         break
                     else:
                         print("Invalid Choice!")  
                 
-            
-MAIN_DRIVER()
-        
-
             
             
         

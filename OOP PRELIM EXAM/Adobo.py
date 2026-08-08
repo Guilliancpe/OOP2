@@ -21,6 +21,13 @@ class Adobo(Recipe, InsertnDelete):
     def delete_adobo(self, ingredient):
         self.delete_ingredient(ingredient, 0)
         
-
+# We will set the original recipe for each food class
+adobo = Adobo() #Object creation
+adobo.insert_adobo("Pork")
+adobo.insert_adobo("Soy sauce")
+adobo.insert_adobo("Oil")
+adobo.insert_adobo("Vinegar")
+adobo.insert_adobo("Garlic")
+adobo.insert_adobo("Pepper")
 
         

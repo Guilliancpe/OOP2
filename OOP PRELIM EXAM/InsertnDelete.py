@@ -12,6 +12,11 @@ class InsertnDelete(Parent_file):
             while len(row) <= column:
                 row.append("")
             
+        for row in rows[1:]: #for loop so it checks everything
+            if row[column].lower() == ingredient.lower(): 
+                print("Ingredient already exists!")
+                return
+            
         for row in rows[1:]:
             if row[column] == "":
                 row[column] = ingredient

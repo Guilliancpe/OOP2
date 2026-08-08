@@ -21,5 +21,16 @@ class Sinigang(Recipe, InsertnDelete):
     def delete_Sinigang(self, ingredient):
         self.delete_ingredient(ingredient, 2)
             
-
+sinigang = Sinigang()
+sinigang.insert_Sinigang("Pork")
+sinigang.insert_Sinigang("Water")
+sinigang.insert_Sinigang("Tamarind")
+sinigang.insert_Sinigang("Tomatoes")
+sinigang.insert_Sinigang("Onion")
+sinigang.insert_Sinigang("Radish")
+sinigang.insert_Sinigang("Eggplant")
+sinigang.insert_Sinigang("String Beans")
+sinigang.insert_Sinigang("Kangkong")
+sinigang.insert_Sinigang("Green Chili")
+sinigang.insert_Sinigang("Fish Sauce")
         

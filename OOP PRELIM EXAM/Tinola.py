@@ -22,5 +22,12 @@ class Tinola(Recipe, InsertnDelete):
         self.delete_ingredient(ingredient, 9)
         
 tinola = Tinola()
-tinola.show_recipe()
-            
+tinola.insert_Tinola("Chicken")
+tinola.insert_Tinola("Ginger")
+tinola.insert_Tinola("Garlic")
+tinola.insert_Tinola("Onion")
+tinola.insert_Tinola("Green Papaya")
+tinola.insert_Tinola("Chili Leaves")
+tinola.insert_Tinola("Fish Sauce")
+tinola.insert_Tinola("Black Pepper")
+tinola.insert_Tinola("Water")            

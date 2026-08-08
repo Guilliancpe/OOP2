@@ -21,3 +21,16 @@ class Chopseuy(Recipe, InsertnDelete):
     def delete_Chopseuy(self, ingredient):
         self.delete_ingredient(ingredient, 8)
             
+chopseuy = Chopseuy()
+chopseuy.insert_Chopseuy("Cabbage")
+chopseuy.insert_Chopseuy("Carrots")
+chopseuy.insert_Chopseuy("Green Beans")
+chopseuy.insert_Chopseuy("Cauliflower")
+chopseuy.insert_Chopseuy("Broccoli")
+chopseuy.insert_Chopseuy("Pork")
+chopseuy.insert_Chopseuy("Shrimp")
+chopseuy.insert_Chopseuy("Bell Pepper")
+chopseuy.insert_Chopseuy("Garlic")
+chopseuy.insert_Chopseuy("Onion")
+chopseuy.insert_Chopseuy("Soy Sauce")
+chopseuy.insert_Chopseuy("Oyster Sauce")

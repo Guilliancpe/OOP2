@@ -21,3 +21,13 @@ class Sisig(Recipe, InsertnDelete):
     def delete_Sisig(self, ingredient):
         self.delete_ingredient(ingredient, 5)
             
+sisig = Sisig()
+sisig.insert_Sisig("Pork")
+sisig.insert_Sisig("Chicken Liver")
+sisig.insert_Sisig("Onion")
+sisig.insert_Sisig("Chili Peppers")
+sisig.insert_Sisig("Calamansi")
+sisig.insert_Sisig("Mayonnaise")
+sisig.insert_Sisig("Soy Sauce")
+sisig.insert_Sisig("Black Pepper")
+sisig.insert_Sisig("Salt")

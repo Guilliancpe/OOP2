@@ -20,3 +20,15 @@ class Bicol_Express(Recipe, InsertnDelete):
                     
     def delete_BC(self, ingredient):
         self.delete_ingredient(ingredient, 4)
+
+BC = Bicol_Express()
+BC.insert_BC("Pork")
+BC.insert_BC("Coconut Milk")
+BC.insert_BC("Coconut Cream")
+BC.insert_BC("Chili Peppers")
+BC.insert_BC("Shrimp Paste")
+BC.insert_BC("Garlic")
+BC.insert_BC("Onion")
+BC.insert_BC("Ginger")
+BC.insert_BC("Fish Sauce")
+BC.insert_BC("Black Pepper")

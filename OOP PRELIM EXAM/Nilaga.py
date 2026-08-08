@@ -21,3 +21,13 @@ class Nilaga(Recipe, InsertnDelete):
     def delete_nilaga(self, ingredient):
         self.delete_ingredient(ingredient, 3)
             
+nilaga = Nilaga()
+nilaga.insert_nilaga("Beef")
+nilaga.insert_nilaga("Water")
+nilaga.insert_nilaga("Potatoes")
+nilaga.insert_nilaga("Corn")
+nilaga.insert_nilaga("Cabbage")
+nilaga.insert_nilaga("Pechay")
+nilaga.insert_nilaga("Onion")
+nilaga.insert_nilaga("Pepper")
+nilaga.insert_nilaga("Fish Sauce")

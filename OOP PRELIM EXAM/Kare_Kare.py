@@ -21,3 +21,14 @@ class Kare_Kare(Recipe, InsertnDelete):
     def delete_KK(self, ingredient):
         self.delete_ingredient(ingredient, 6)
             
+KK = Kare_Kare()
+KK.insert_KK("Beef")
+KK.insert_KK("Peanut Butter")
+KK.insert_KK("Peanuts")
+KK.insert_KK("Eggplant")
+KK.insert_KK("String Beans")
+KK.insert_KK("Pechay")
+KK.insert_KK("Banana Heart")
+KK.insert_KK("Shrimp Paste")
+KK.insert_KK("Garlic")
+KK.insert_KK("Onion")
