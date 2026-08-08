@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
-from Insert import Insert
+from InsertnDelete import InsertnDelete
 
 
-class Recipe(Insert, ABC):
+class Recipe(InsertnDelete, ABC):
     def __init__(self, filename = "Recipe.csv"):
         super().__init__(filename)
         

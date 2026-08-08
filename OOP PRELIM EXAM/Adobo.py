@@ -1,9 +1,9 @@
 from Abstraction import Recipe
-from Insert import Insert
+from InsertnDelete import InsertnDelete
 import csv
 
 #Inheritance
-class Adobo(Recipe, Insert):
+class Adobo(Recipe, InsertnDelete):
     def show_recipe(self):
         print ("----- ADOBO -----")
         print ("Recipe: ")
@@ -17,10 +17,16 @@ class Adobo(Recipe, Insert):
                 
     def insert_adobo(self, ingredient):
         self.insert_ingredient(ingredient, 0)
+        
+    def delete_adobo(self, ingredient):
+        self.delete_ingredient(ingredient, 0)
 
 #Object creation
 adobo = Adobo()
 
-adobo.insert_adobo("Pork")
+
 adobo.show_recipe()
+
+adobo.delete_adobo("Pork")
+adobo.delete_adobo("Garlic")
         
