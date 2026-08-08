@@ -21,7 +21,3 @@ class Tinola(Recipe, InsertnDelete):
     def delete_Tinola(self, ingredient):
         self.delete_ingredient(ingredient, 9)
             
-Tinola = Tinola()
-
-Tinola.insert_Tinola("Chicken")
-        

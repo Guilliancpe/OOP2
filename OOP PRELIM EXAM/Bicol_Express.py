@@ -20,8 +20,3 @@ class Bicol_Express(Recipe, InsertnDelete):
                     
     def delete_BC(self, ingredient):
         self.delete_ingredient(ingredient, 4)
-            
-BC = Bicol_Express()
-
-BC.insert_BC("Pork")
-        

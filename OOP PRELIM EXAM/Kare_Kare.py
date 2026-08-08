@@ -21,7 +21,3 @@ class Kare_Kare(Recipe, InsertnDelete):
     def delete_KK(self, ingredient):
         self.delete_ingredient(ingredient, 6)
             
-KK = Kare_Kare()
-
-KK.insert_KK("Peanuts")
-        

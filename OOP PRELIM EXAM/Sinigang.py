@@ -21,7 +21,5 @@ class Sinigang(Recipe, InsertnDelete):
     def delete_Sinigang(self, ingredient):
         self.delete_ingredient(ingredient, 2)
             
-Sinigang = Sinigang()
 
-Sinigang.insert_Sinigang("Pork")
         

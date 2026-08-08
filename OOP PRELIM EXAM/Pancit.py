@@ -21,7 +21,3 @@ class Pancit(Recipe, InsertnDelete):
     def delete_Pancit(self, ingredient):
         self.delete_ingredient(ingredient, 7)
             
-Pancit = Pancit()
-
-Pancit.insert_Pancit("Noodles")
-        

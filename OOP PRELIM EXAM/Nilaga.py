@@ -21,7 +21,3 @@ class Nilaga(Recipe, InsertnDelete):
     def delete_nilaga(self, ingredient):
         self.delete_ingredient(ingredient, 3)
             
-nilaga = Nilaga()
-
-nilaga.insert_nilaga("Beef")
-        

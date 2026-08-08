@@ -21,7 +21,3 @@ class Sisig(Recipe, InsertnDelete):
     def delete_Sisig(self, ingredient):
         self.delete_ingredient(ingredient, 5)
             
-Sisig = Sisig()
-
-Sisig.insert_Sisig("Pork")
-        

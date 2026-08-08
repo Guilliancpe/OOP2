@@ -21,7 +21,3 @@ class Lumpia(Recipe, InsertnDelete):
     def delete_lumpia(self, ingredient):
         self.delete_ingredient(ingredient, 1)
             
-lumpia = Lumpia()
-
-lumpia.insert_lumpia("Carrots")
-        

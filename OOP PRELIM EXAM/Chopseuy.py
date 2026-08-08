@@ -21,7 +21,3 @@ class Chopseuy(Recipe, InsertnDelete):
     def delete_Chopseuy(self, ingredient):
         self.delete_ingredient(ingredient, 8)
             
-CS = Chopseuy()
-
-CS.insert_Chopseuy("Pork")
-        
