@@ -14,4 +14,4 @@ class Adobo(Abstraction):
                     print("-", row[0])
                 
     def insert_adobo(self, ingredient):
-        self.ins
+        self.insert
