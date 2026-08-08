@@ -3,7 +3,7 @@ from InsertnDelete import InsertnDelete
 import csv
 
 
-class Lumpia(Recipe, InsertnDelete):
+class Chopseuy(Recipe, InsertnDelete):
     def show_recipe(self):
         print("----- LUMPIA -----")
         print(" Recipe: ")
@@ -12,16 +12,16 @@ class Lumpia(Recipe, InsertnDelete):
             reader = csv.reader(file)
             
             for row in reader:
-                if len(row) > 1 and row[1] != "":
+                if len(row) > 9 and row[9] != "":
                     print("-", row[1:])
                                        
-    def insert_lumpia(self, ingredient):
-        self.insert_ingredient(ingredient, 1)
+    def insert_Chopseuy(self, ingredient):
+        self.insert_ingredient(ingredient, 9)
                     
-    def delete_lumpia(self, ingredient):
-        self.delete_ingredient(ingredient, 1)
+    def delete_Chopseuy(self, ingredient):
+        self.delete_ingredient(ingredient, 9)
             
-lumpia = Lumpia()
+CS = Chopseuy()
 
-lumpia.insert_lumpia("Carrots")
+CS.insert_Chopseuy("Pork")
         

@@ -20,6 +20,10 @@ class Adobo(Recipe, InsertnDelete):
         
     def delete_adobo(self, ingredient):
         self.delete_ingredient(ingredient, 0)
+        
+adobo = Adobo()
+
+adobo.insert_adobo("Pork")
 
 
         
