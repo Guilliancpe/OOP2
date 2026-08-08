@@ -1,4 +1,3 @@
-import pandas as pd
 import os, csv
 
 class Parent_file:
