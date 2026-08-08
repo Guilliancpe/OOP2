@@ -12,14 +12,14 @@ class Nilaga(Recipe, InsertnDelete):
             reader = csv.reader(file)
             
             for row in reader:
-                if len(row) > 4 and row[4] != "":
+                if len(row) > 3 and row[3] != "":
                     print("-", row[1:])
                                        
     def insert_nilaga(self, ingredient):
-        self.insert_ingredient(ingredient, 4)
+        self.insert_ingredient(ingredient, 3)
                     
     def delete_nilaga(self, ingredient):
-        self.delete_ingredient(ingredient, 4)
+        self.delete_ingredient(ingredient, 3)
             
 nilaga = Nilaga()
 

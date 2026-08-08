@@ -12,14 +12,14 @@ class Chopseuy(Recipe, InsertnDelete):
             reader = csv.reader(file)
             
             for row in reader:
-                if len(row) > 9 and row[9] != "":
+                if len(row) > 8 and row[8] != "":
                     print("-", row[1:])
                                        
     def insert_Chopseuy(self, ingredient):
-        self.insert_ingredient(ingredient, 9)
+        self.insert_ingredient(ingredient, 8)
                     
     def delete_Chopseuy(self, ingredient):
-        self.delete_ingredient(ingredient, 9)
+        self.delete_ingredient(ingredient, 8)
             
 CS = Chopseuy()
 

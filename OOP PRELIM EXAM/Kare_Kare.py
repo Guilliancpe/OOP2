@@ -12,14 +12,14 @@ class Kare_Kare(Recipe, InsertnDelete):
             reader = csv.reader(file)
             
             for row in reader:
-                if len(row) > 7 and row[7] != "":
+                if len(row) > 6 and row[6] != "":
                     print("-", row[1:])
                                        
     def insert_KK(self, ingredient):
-        self.insert_ingredient(ingredient, 7)
+        self.insert_ingredient(ingredient, 6)
                     
     def delete_KK(self, ingredient):
-        self.delete_ingredient(ingredient, 7)
+        self.delete_ingredient(ingredient, 6)
             
 KK = Kare_Kare()
 

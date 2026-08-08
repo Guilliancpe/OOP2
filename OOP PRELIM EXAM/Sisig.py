@@ -12,14 +12,14 @@ class Sisig(Recipe, InsertnDelete):
             reader = csv.reader(file)
             
             for row in reader:
-                if len(row) > 6 and row[1] != "6":
+                if len(row) > 5 and row[5] != "":
                     print("-", row[1:])
                                        
     def insert_Sisig(self, ingredient):
-        self.insert_ingredient(ingredient, 6)
+        self.insert_ingredient(ingredient, 5)
                     
     def delete_Sisig(self, ingredient):
-        self.delete_ingredient(ingredient, 6)
+        self.delete_ingredient(ingredient, 5)
             
 Sisig = Sisig()
 

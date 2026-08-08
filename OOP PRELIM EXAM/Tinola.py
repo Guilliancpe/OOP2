@@ -12,14 +12,14 @@ class Tinola(Recipe, InsertnDelete):
             reader = csv.reader(file)
             
             for row in reader:
-                if len(row) > 10 and row[10] != "":
+                if len(row) > 9 and row[9] != "":
                     print("-", row[1:])
                                        
     def insert_Tinola(self, ingredient):
-        self.insert_ingredient(ingredient, 10)
+        self.insert_ingredient(ingredient, 9)
                     
     def delete_Tinola(self, ingredient):
-        self.delete_ingredient(ingredient, 10)
+        self.delete_ingredient(ingredient, 9)
             
 Tinola = Tinola()
 

@@ -12,14 +12,14 @@ class Bicol_Express(Recipe, InsertnDelete):
             reader = csv.reader(file)
             
             for row in reader:
-                if len(row) > 5 and row[5] != "":
+                if len(row) > 4 and row[4] != "":
                     print("-", row[1:])
                                        
     def insert_BC(self, ingredient):
-        self.insert_ingredient(ingredient, 5)
+        self.insert_ingredient(ingredient, 4)
                     
     def delete_BC(self, ingredient):
-        self.delete_ingredient(ingredient, 5)
+        self.delete_ingredient(ingredient, 4)
             
 BC = Bicol_Express()
 

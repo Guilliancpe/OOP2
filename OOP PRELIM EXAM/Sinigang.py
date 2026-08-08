@@ -12,14 +12,14 @@ class Sinigang(Recipe, InsertnDelete):
             reader = csv.reader(file)
             
             for row in reader:
-                if len(row) > 3 and row[3] != "":
+                if len(row) > 2 and row[2] != "":
                     print("-", row[1:])
                                        
     def insert_Sinigang(self, ingredient):
-        self.insert_ingredient(ingredient, 3)
+        self.insert_ingredient(ingredient, 2)
                     
     def delete_Sinigang(self, ingredient):
-        self.delete_ingredient(ingredient, 3)
+        self.delete_ingredient(ingredient, 2)
             
 Sinigang = Sinigang()
 

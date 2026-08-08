@@ -12,14 +12,14 @@ class Pancit(Recipe, InsertnDelete):
             reader = csv.reader(file)
             
             for row in reader:
-                if len(row) > 8 and row[8] != "":
+                if len(row) > 7 and row[7] != "":
                     print("-", row[1:])
                                        
     def insert_Pancit(self, ingredient):
-        self.insert_ingredient(ingredient, 8)
+        self.insert_ingredient(ingredient, 7)
                     
     def delete_Pancit(self, ingredient):
-        self.delete_ingredient(ingredient, 8)
+        self.delete_ingredient(ingredient, 7)
             
 Pancit = Pancit()
 
