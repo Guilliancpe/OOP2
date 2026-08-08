@@ -45,19 +45,17 @@ def MAIN_DRIVER():
         if choice == 1:
             print("====== ADOBO ======")
             print("1. New Ingredient")
-            print("3. Delete Recipe")
-            print("4. Exit")
+            print("2. Delete Recipe")
+            print("3. Exit")
             new_choice = None
             new_choice = int(input("Input choice: "))
             if new_choice == 1:
                 x = input("Input Ingredient: ")
                 adobo.insert_adobo(x)
             elif new_choice == 2:
-                adobo.show_recipe()
-            elif new_choice == 3:
                 x = input("Delete Ingredient: ")
                 adobo.delete_adobo(x)
-            elif new_choice == 4:
+            elif new_choice == 3:
                 return
             
 MAIN_DRIVER()
