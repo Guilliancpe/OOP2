@@ -13,7 +13,7 @@ class Sinigang(Recipe, InsertnDelete):
             
             for row in reader:
                 if len(row) > 2 and row[2] != "":
-                    print("-", row[1:])
+                    print("-", row[2])
                                        
     def insert_Sinigang(self, ingredient):
         self.insert_ingredient(ingredient, 2)

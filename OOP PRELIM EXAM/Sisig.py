@@ -13,7 +13,7 @@ class Sisig(Recipe, InsertnDelete):
             
             for row in reader:
                 if len(row) > 5 and row[5] != "":
-                    print("-", row[1:])
+                    print("-", row[5])
                                        
     def insert_Sisig(self, ingredient):
         self.insert_ingredient(ingredient, 5)

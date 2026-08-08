@@ -13,7 +13,7 @@ class Adobo(Recipe, InsertnDelete):
             
             for row in reader:
                 if len(row) > 0 and row[0] != "":
-                    print("-", row[1:])
+                    print("-", row[0])
                 
     def insert_adobo(self, ingredient):
         self.insert_ingredient(ingredient, 0)

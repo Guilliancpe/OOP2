@@ -13,7 +13,7 @@ class Bicol_Express(Recipe, InsertnDelete):
             
             for row in reader:
                 if len(row) > 4 and row[4] != "":
-                    print("-", row[1:])
+                    print("-", row[4])
                                        
     def insert_BC(self, ingredient):
         self.insert_ingredient(ingredient, 4)

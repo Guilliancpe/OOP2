@@ -13,7 +13,7 @@ class Nilaga(Recipe, InsertnDelete):
             
             for row in reader:
                 if len(row) > 3 and row[3] != "":
-                    print("-", row[1:])
+                    print("-", row[3])
                                        
     def insert_nilaga(self, ingredient):
         self.insert_ingredient(ingredient, 3)

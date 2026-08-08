@@ -13,7 +13,7 @@ class Kare_Kare(Recipe, InsertnDelete):
             
             for row in reader:
                 if len(row) > 6 and row[6] != "":
-                    print("-", row[1:])
+                    print("-", row[6])
                                        
     def insert_KK(self, ingredient):
         self.insert_ingredient(ingredient, 6)

@@ -13,7 +13,7 @@ class Pancit(Recipe, InsertnDelete):
             
             for row in reader:
                 if len(row) > 7 and row[7] != "":
-                    print("-", row[1:])
+                    print("-", row[7])
                                        
     def insert_Pancit(self, ingredient):
         self.insert_ingredient(ingredient, 7)

@@ -13,7 +13,7 @@ class Lumpia(Recipe, InsertnDelete):
             
             for row in reader:
                 if len(row) > 1 and row[1] != "":
-                    print("-", row[1:])
+                    print("-", row[1])
                                        
     def insert_lumpia(self, ingredient):
         self.insert_ingredient(ingredient, 1)

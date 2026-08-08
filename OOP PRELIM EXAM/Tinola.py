@@ -13,7 +13,7 @@ class Tinola(Recipe, InsertnDelete):
             
             for row in reader:
                 if len(row) > 9 and row[9] != "":
-                    print("-", row[1:])
+                    print("-", row[0])
                                        
     def insert_Tinola(self, ingredient):
         self.insert_ingredient(ingredient, 9)

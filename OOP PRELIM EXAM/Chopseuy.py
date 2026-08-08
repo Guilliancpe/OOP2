@@ -13,7 +13,7 @@ class Chopseuy(Recipe, InsertnDelete):
             
             for row in reader:
                 if len(row) > 8 and row[8] != "":
-                    print("-", row[1:])
+                    print("-", row[8])
                                        
     def insert_Chopseuy(self, ingredient):
         self.insert_ingredient(ingredient, 8)
