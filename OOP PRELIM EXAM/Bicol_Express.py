@@ -5,7 +5,7 @@ import csv
 
 class Bicol_Express(Recipe, InsertnDelete):
     def show_recipe(self):
-        print("----- LUMPIA -----")
+        print("----- BICOL EXPRESS -----")
         print(" Recipe: ")
         
         with open(self.filename, "r", newline="") as file:

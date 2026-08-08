@@ -5,7 +5,7 @@ import csv
 
 class Kare_Kare(Recipe, InsertnDelete):
     def show_recipe(self):
-        print("----- LUMPIA -----")
+        print("----- KARE-KARE -----")
         print(" Recipe: ")
         
         with open(self.filename, "r", newline="") as file:

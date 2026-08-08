@@ -5,7 +5,7 @@ import csv
 
 class Pancit(Recipe, InsertnDelete):
     def show_recipe(self):
-        print("----- LUMPIA -----")
+        print("----- PANCIT -----")
         print(" Recipe: ")
         
         with open(self.filename, "r", newline="") as file:

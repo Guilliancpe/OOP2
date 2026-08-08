@@ -5,7 +5,7 @@ import csv
 
 class Sinigang(Recipe, InsertnDelete):
     def show_recipe(self):
-        print("----- LUMPIA -----")
+        print("----- SINIGANG -----")
         print(" Recipe: ")
         
         with open(self.filename, "r", newline="") as file:

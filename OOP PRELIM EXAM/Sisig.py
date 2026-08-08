@@ -5,7 +5,7 @@ import csv
 
 class Sisig(Recipe, InsertnDelete):
     def show_recipe(self):
-        print("----- LUMPIA -----")
+        print("----- SISIG -----")
         print(" Recipe: ")
         
         with open(self.filename, "r", newline="") as file:
